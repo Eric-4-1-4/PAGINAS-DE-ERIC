@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservaciones - Villa Romana</title>
+    <link rel="stylesheet" href="reservaciones.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+    <nav class="topbar">
+        <div class="menu-icon" id="menu-toggle">
+            <span class="material-icons">menu</span>
+        </div>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+            <li>
+                <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+                <strong id="username"></strong>
+                <br />
+                <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+                <small id="useremail"></small>
+            </li>
+            <li><a href="/Ubicación/ubicacion.html">Ubicación</a></li>
+            <li><a href="/Contacto/contacto.html">Contacto</a></li>
+            <li><a href="/Horarios/horarios.html">Horarios De Atención</a></li>
+            <li><a href="/LoginAndRegister/Login.html" id="logout-link">Cerrar Sesión</a></li>
+        </ul>
+    </aside>
+
+    <header>
+        <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+        <h2>"Una experiencia que se saborea"</h2>
+    </header>
+
+    <main class="reservations-content">
+        <h1>Elige tu Mesa</h1>
+        <p>Selecciona una fecha y luego elige una mesa del mapa.</p>
+        
+        <div class="reservation-controls">
+            <label for="reservation-date">Fecha para la reservación:</label>
+            <input type="date" id="reservation-date">
+        </div>
+
+        <div class="table-map-container">
+    <div id="table-map" class="table-map">
+        <div class="table available" data-id="1" tabindex="0">Mesa 1</div>
+        <div class="table available" data-id="2" tabindex="0">Mesa 2</div>
+        <div class="table available" data-id="3" tabindex="0">Mesa 3</div>
+        <div class="table available" data-id="4" tabindex="0">Mesa 4</div>
+        <div class="table available" data-id="5" tabindex="0">Mesa 5</div>
+        <div class="table available" data-id="6" tabindex="0">Mesa 6</div>
+        <div class="table available" data-id="7" tabindex="0">Mesa 7</div>
+        <div class="table available" data-id="8" tabindex="0">Mesa 8</div>
+        <div class="table available" data-id="9" tabindex="0">Mesa 9</div>
+        <div class="table available" data-id="10" tabindex="0">Mesa 10</div>
+    </div>
+</div>
+
+        <div class="legend">
+            <div><span class="table-icon available"></span> Disponible</div>
+            <div><span class="table-icon reserved"></span> Ocupada</div>
+            <div><span class="table-icon selected"></span> Seleccionada</div>
+        </div>
+        
+        <button id="confirm-reservation-btn" class="confirm-btn" disabled>Confirmar Reservación</button>
+    </main>
+
+    <div class="bottom-nav">
+        <a href="/Home/home.html" class="home-button">
+            <span class="material-icons">home</span>
+        </a>
+    </div>
+
+    <div id="reservation-modal" class="modal hidden">
+    <div class="modal-content">
+        <h2>Reservar Mesa</h2>
+        <form id="reservation-form">
+            <label>Usuario:</label>
+            <input type="text" id="modal-username" readonly />
+
+            <label>Correo:</label>
+            <input type="email" id="modal-email" readonly />
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" required />
+
+            <label for="people">Cantidad de personas:</label>
+            <input type="number" id="people" min="1" required />
+
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" rows="3"></textarea>
+
+            <button type="submit" class="confirm-btn">Reservar</button>
+            <button type="button" id="close-modal" class="cancel-btn">Cancelar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal para Cancelación -->
+<div id="cancel-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Cancelar Reservación</h2>
+    <form id="cancel-form">
+      <label>Usuario:</label>
+      <input type="text" id="cancel-username" readonly />
+
+      <label>Correo:</label>
+      <input type="email" id="cancel-email" readonly />
+
+      <label for="cancel-reason">Razón de la cancelación:</label>
+      <textarea id="cancel-reason" rows="3" required></textarea>
+
+      <button type="submit" class="confirm-btn">Enviar</button>
+      <button type="button" id="close-cancel-modal" class="cancel-btn">Cerrar</button>
+    </form>
+  </div>
+</div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
+
+    <script type="module" src="reservaciones.js"></script> 
+</body>
+</html>

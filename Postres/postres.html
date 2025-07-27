@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Postres - Villa Romana</title>
+  <link rel="stylesheet" href="postres.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg"/>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="menu-icon" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
+    <div class="cart-icon">
+      <a href="/Carrito/carrito.html">
+      <span class="material-icons">shopping_cart</span>
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+        <strong id="username"></strong>
+        <br />
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+        <small id="useremail"></small>
+      </li>
+      <li><a href="/Reservaciones/reservaciones.html">Reservaciones</a></li>
+      <li><a href="/Ubicación/ubicacion.html">Ubicación</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto </a></li>
+      <li><a href="/Horarios/horarios.html">Horarios De Atención </a></li>
+      <li><a href="/LoginAndRegister/Login.html">Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <header>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>"Una experiencia que se saborea"</h2>
+  </header>
+
+  <main>
+    <h1>Postres</h1>
+    <div class="products-grid">
+      <div class="product-item">
+        <img src="../imagenes_postres/Tiramisú Clásico.jpg" alt="Tiramisú Clásico" class="product-image" />
+        <h3>Tiramisú Clásico</h3>
+        <p class="product-description">Postre italiano con capas de bizcochos, café, mascarpone y cacao.</p>
+        <p class="product-price">Q 55.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_postres/Panna Cotta con Frutos Rojos.jpg" alt="Panna Cotta con Frutos Rojos" class="product-image" />
+        <h3>Panna Cotta con Frutos Rojos</h3>
+        <p class="product-description">Crema cocida italiana con coulis de frutos rojos frescos.</p>
+        <p class="product-price">Q 48.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_postres/Gelato Artesanal.jpg" alt="Gelato Artesanal" class="product-image" />
+        <h3>Gelato Artesanal</h3>
+        <p class="product-description">Variedad de sabores de helado italiano hecho en casa.</p>
+        <p class="product-price">Q 35.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_postres/Cannoli Siciliani.jpg" alt="Cannoli Siciliani" class="product-image" />
+        <h3>Cannoli Siciliani</h3>
+        <p class="product-description">Crujientes tubos de masa frita rellenos de ricota dulce y chocolate.</p>
+        <p class="product-price">Q 40.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_postres/Affogato al Caffè.jpg" alt="Affogato al Caffè" class="product-image" />
+        <h3>Affogato al Caffè</h3>
+        <p class="product-description">Bola de helado de vainilla ahogada en un shot de espresso caliente.</p>
+        <p class="product-price">Q 30.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_postres/Cheesecake de Ricota.jpg" alt="Cheesecake de Ricota" class="product-image" />
+        <h3>Cheesecake de Ricota</h3>
+        <p class="product-description">Pastel de queso con ricota fresca y ralladura de limón.</p>
+        <p class="product-price">Q 52.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="/Home/home.html" class="home-button">
+      <span class="material-icons">home</span>
+      </a>
+  </div>
+
+  <script type="module" src="postres.js"></script>
+</body>
+</html>

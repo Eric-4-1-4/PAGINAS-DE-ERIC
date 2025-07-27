@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b22222;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-icon, .cart-icon {
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Sidebar contextual (CÓDIGO CORREGIDO) */
+.sidebar {
+  /* CAMBIO 1: Cambiamos 'absolute' por 'fixed' */
+  position: fixed; 
+  
+  top: 65px; /* Ajusta este valor si es necesario para que quede debajo de tu topbar */
+  left: 20px; /* Alineado con el ícono */
+  background-color: #fff;
+  border: 2px solid #b22222;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px;
+  display: none;
+  
+  /* CAMBIO 2: Aumentamos el z-index para que aparezca por encima del topbar */
+  z-index: 1001; 
+}
+
+.sidebar.open {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #b22222;
+  font-weight: 500;
+}
+
+/* Las clases para el submenu han sido eliminadas */
+
+/* Header */
+header {
+  padding: 20px 10px;
+  background-color: #b22222;
+  color: white;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* Menu grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-decoration: none;
+  color: #b22222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cart-icon a {
+    color: white;
+    text-decoration: none;
+}

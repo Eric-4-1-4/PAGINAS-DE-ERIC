@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Villa Romana</title>
+  <link rel="stylesheet" href="Home.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="menu-icon" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
+    <div class="cart-icon">
+      <a href="/Carrito/carrito.html">
+      <span class="material-icons">shopping_cart</span>
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+        <strong id="username"></strong>
+        <br />
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+        <small id="useremail"></small>
+      </li>
+      <li><a href="/Reservaciones/reservaciones.html">Reservaciones</a></li>
+      <li><a href="/Ubicación/ubicacion.html">Ubicación</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto </a></li>
+      <li><a href="/Horarios/horarios.html">Horarios De Atención </a></li>
+      <li><a href="/LoginAndRegister/Login.html">Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <header>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>"Una experiencia que se saborea"</h2>
+  </header>
+
+  <main>
+    <h1>Menú</h1>
+    <div class="menu-grid">
+      <a href="../Entradas/entradas.html" class="menu-item"><h2>Entradas</h2></a>
+      <a href="../PlatosFuertes/platosfuertes.html" class="menu-item"><h2>Platos Fuertes</h2></a>
+      <a href="../Postres/postres.html" class="menu-item"><h2>Postres</h2></a>
+      <a href="../Bebidas/bebidas.html" class="menu-item"><h2>Bebidas</h2></a>
+      <a href="../Pizzas/pizzas.html" class="menu-item"><h2>Pizzas</h2></a>
+    </div>
+  </main>
+
+<script type="module" src="Home.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bebidas - Villa Romana</title>
+  <link rel="stylesheet" href="bebidas.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="menu-icon" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
+    <div class="cart-icon">
+      <a href="/Carrito/carrito.html">
+      <span class="material-icons">shopping_cart</span>
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+        <strong id="username"></strong>
+        <br />
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+        <small id="useremail"></small>
+      </li>
+      <li><a href="/Reservaciones/reservaciones.html">Reservaciones</a></li>
+      <li><a href="/Ubicación/ubicacion.html">Ubicación</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto </a></li>
+      <li><a href="/Horarios/horarios.html">Horarios De Atención </a></li>
+      <li><a href="/LoginAndRegister/Login.html">Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <header>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>"Una experiencia que se saborea"</h2>
+  </header>
+
+  <main>
+    <h1>Bebidas</h1>
+    <div class="products-grid">
+      <div class="product-item">
+        <img src="../imagenes_bebidas/Agua Pura.jpg" alt="Agua Pura" class="product-image" />
+        <h3>Agua Pura</h3>
+        <p class="product-description">Agua embotellada natural.</p>
+        <p class="product-price">Q 15.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_bebidas/Limonada Natural.jpg" alt="Limonada Natural" class="product-image" />
+        <h3>Limonada Natural</h3>
+        <p class="product-description">Refrescante limonada hecha en casa.</p>
+        <p class="product-price">Q 25.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_bebidas/Jugo de Naranja.jpg" alt="Jugo de Naranja" class="product-image" />
+        <h3>Jugo de Naranja</h3>
+        <p class="product-description">Jugo de naranja natural, recién exprimido.</p>
+        <p class="product-price">Q 30.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_bebidas/Vino Tinto de la Casa.jpg" alt="Vino Tinto de la Casa" class="product-image" />
+        <h3>Vino Tinto de la Casa (Copa)</h3>
+        <p class="product-description">Copa de vino tinto joven, ideal para acompañar.</p>
+        <p class="product-price">Q 45.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_bebidas/Espresso.jpg" alt="Espresso" class="product-image" />
+        <h3>Espresso</h3>
+        <p class="product-description">Shot de café espresso concentrado.</p>
+        <p class="product-price">Q 18.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_bebidas/Cappuccino.jpg" alt="Cappuccino" class="product-image" />
+        <h3>Cappuccino</h3>
+        <p class="product-description">Café con leche vaporizada y espuma de leche.</p>
+        <p class="product-price">Q 28.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="/Home/home.html" class="home-button">
+      <span class="material-icons">home</span>
+      </a>
+  </div>
+
+  <script type="module" src="bebidas.js"></script>
+</body>
+</html>

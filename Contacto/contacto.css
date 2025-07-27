@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-bottom: 70px; /* Espacio para la barra inferior */
+    background-color: #fafafa;
+    color: #333;
+    text-align: center;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between; /* Ajustado para que el menú y el espacio vacío se separen */
+    align-items: center;
+    background-color: #b22222;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-icon { /* Solo el menú icon, el cart-icon ya no está */
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* Sidebar contextual */
+.sidebar {
+    position: fixed; 
+    top: 65px;
+    left: 20px;
+    background-color: #fff;
+    border: 2px solid #b22222;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 220px;
+    display: none;
+    z-index: 1001; 
+}
+
+.sidebar.open {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #b22222;
+    font-weight: 500;
+}
+
+/* Estilos para la información del usuario en el sidebar (copiados de tu Home CSS) */
+.user-info { /* Asegúrate de que esto esté presente en tu HTML del sidebar para que aplique */
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #333;
+}
+
+.user-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.user-info .user-icon,
+.user-info .email-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #b22222;
+}
+
+.user-info .user-name {
+    font-weight: 600;
+}
+
+
+/* Header */
+header {
+  padding: 20px 10px;
+  background-color: #b22222;
+  color: white;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* Estilos específicos para la sección de Contacto */
+.contact-content {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 20px auto 80px auto; /* Añade margen inferior para el bottom-nav */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-content h1 {
+    color: #b22222;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centra la lista */
+    text-align: center; /* Centra los items de la lista si son inline */
+    max-width: 400px; /* Limita el ancho de la lista para que no se extienda demasiado */
+}
+
+.contact-info li {
+    display: flex; /* Para alinear icono y texto */
+    align-items: center;
+    justify-content: center; /* Centra los elementos dentro del li */
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-info li span.material-icons,
+.contact-info li i.fab { /* Estilos para los iconos */
+    font-size: 28px; /* Tamaño más grande para los iconos */
+    color: #b22222;
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+    min-width: 30px; /* Asegura un ancho mínimo para los iconos */
+    text-align: center; /* Centra el icono si es más pequeño que el min-width */
+}
+
+.contact-info li strong {
+    color: #333;
+}
+
+.contact-info .social-links {
+    margin-top: -10px; /* Ajuste para acercar a "Redes Sociales" */
+}
+
+.contact-info .social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-info .social-links a:hover {
+    color: #b22222;
+}
+
+/* Barra de navegación inferior (misma que en Entradas) */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b22222;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.home-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.home-button:hover {
+    color: #f0f0f0;
+}
+
+.home-button .material-icons {
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+

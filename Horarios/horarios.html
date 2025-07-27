@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horarios - Villa Romana</title>
+  <link rel="stylesheet" href="horarios.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="menu-icon" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+        <strong id="username"></strong>
+        <br />
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+        <small id="useremail"></small>
+      </li>
+      <li><a href="/Reservaciones/reservaciones.html">Reservaciones</a></li>
+      <li><a href="/Ubicación/ubicacion.html">Ubicación</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto</a></li>
+      <li><a href="/LoginAndRegister/Login.html">Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <header>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>"Una experiencia que se saborea"</h2>
+  </header>
+
+  <main class="horarios-content">
+    <h1>Horarios de Atención</h1>
+    <div class="horarios-info">
+      <ul>
+        <li>
+          <span class="material-icons">schedule</span>
+          <span><strong>Lunes a Viernes:</strong><br>8:00 AM - 10:00 PM</span>
+        </li>
+        <li>
+          <span class="material-icons">schedule</span>
+          <span><strong>Sábados:</strong><br>9:00 AM - 11:00 PM</span>
+        </li>
+        <li>
+          <span class="material-icons">schedule</span>
+          <span><strong>Domingos:</strong><br>9:00 AM - 8:00 PM</span>
+        </li>
+        <li>
+          <span class="material-icons">event</span>
+          <span><strong>Feriados:</strong><br>Consultar en redes sociales</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="/Home/home.html" class="home-button">
+      <span class="material-icons">home</span>
+    </a>
+  </div>
+
+  <script type="module" src="horarios.js"></script>
+</body>
+</html>

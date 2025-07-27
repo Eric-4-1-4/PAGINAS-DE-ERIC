@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proceder al Pago - Villa Romana</title>
+  <link rel="stylesheet" href="pago.css" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+  <header>
+    <a href="../Carrito/carrito.html" class="back-button">&#8592; Volver al Carrito</a>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>Finalizar Compra</h2>
+  </header>
+
+  <main class="payment-container">
+    <form id="payment-form">
+      <fieldset>
+        <legend>Datos del Cliente</legend>
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <input type="tel" id="telefono" placeholder="Teléfono" required />
+        <input type="text" id="direccion" placeholder="Dirección de entrega" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Método de Pago</legend>
+        <label><input type="radio" name="metodo" value="tarjeta" required /> Tarjeta de Crédito/Débito</label><br />
+        <label><input type="radio" name="metodo" value="efectivo" required /> Pago contra entrega</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Resumen del Pedido</legend>
+        <div id="resumen-compra"></div>
+        <p>Envío: Q 25.00</p>
+        <p><strong>Total: <span id="total-pago">Q 0.00</span></strong></p>
+      </fieldset>
+
+      <button type="submit">Confirmar Compra</button>
+    </form>
+  </main>
+
+  <!-- Fondo bloqueador -->
+  <div id="overlay-bloqueo" class="overlay-bloqueo"></div>
+
+  <!-- Mensaje flotante de agradecimiento -->
+  <div id="mensaje-final" class="mensaje-flotante">
+    <span class="cerrar-x" id="cerrar-mensaje">&times;</span>
+    <div class="mensaje-contenido"></div>
+  </div>
+
+  <script src="pago.js"></script>
+</body>
+</html>

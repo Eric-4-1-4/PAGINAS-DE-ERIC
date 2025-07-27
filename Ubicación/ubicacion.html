@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ubicación - Villa Romana</title>
+  <link rel="stylesheet" href="ubicacion.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="menu-icon" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+        <strong id="username"></strong>
+        <br />
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+        <small id="useremail"></small>
+      </li>
+      <li><a href="/Reservaciones/reservaciones.html">Reservaciones</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto </a></li>
+      <li><a href="/Horarios/horarios.html">Horarios De Atención</a></li>
+      <li><a href="/LoginAndRegister/Login.html">Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <header>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>"Una experiencia que se saborea"</h2>
+  </header>
+
+  <main class="ubicacion-content">
+    <h1>Nuestra Ubicación</h1>
+    <ul>
+      <li>
+        <span class="material-icons">location_on</span>
+        <span>7Av 3-45 Zona 1, Ciudad Nueva, Guatemala, C.A.</span>
+      </li>
+    </ul>
+
+    <!-- Mapa embebido (puedes cambiar src si lo deseas) -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.602354182925!2d-90.512!3d14.634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1e6e194b733%3A0x631fc2c8f017c4c6!2sCiudad%20Nueva%2C%20Guatemala!5e0!3m2!1ses!2sgt!4v1719420000000!5m2!1ses!2sgt" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="/Home/home.html" class="home-button">
+      <span class="material-icons">home</span>
+    </a>
+  </div>
+
+  <script type="module" src="ubicacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzas - Villa Romana</title>
+  <link rel="stylesheet" href="pizzas.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../imagesgenerales/LOGOVILLA.jpg" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="menu-icon" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
+    <div class="cart-icon">
+      <a href="/Carrito/carrito.html">
+      <span class="material-icons">shopping_cart</span>
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">person</span>
+        <strong id="username"></strong>
+        <br />
+        <span class="material-icons" style="vertical-align: middle; margin-right: 4px;">email</span>
+        <small id="useremail"></small>
+      </li>
+      <li><a href="/Reservaciones/reservaciones.html">Reservaciones</a></li>
+      <li><a href="/Ubicación/ubicacion.html">Ubicación</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto </a></li>
+      <li><a href="/Horarios/horarios.html">Horarios De Atención </a></li>
+      <li><a href="/LoginAndRegister/Login.html">Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <header>
+    <img src="../imagesgenerales/logo.png" alt="Logo del Restaurante" class="logo" />
+    <h2>"Una experiencia que se saborea"</h2>
+  </header>
+
+  <main>
+    <h1>Pizzas</h1>
+    <div class="products-grid">
+      <div class="product-item">
+        <img src="../imagenes_pizzas/margherita.jpg" alt="Pizza Margherita" class="product-image" />
+        <h3>Pizza Margherita</h3>
+        <p class="product-description">Tomate San Marzano, mozzarella fresca, albahaca y aceite de oliva.</p>
+        <p class="product-price">Q 85.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_pizzas/Pizza Pepperoni.jpg" alt="Pizza Pepperoni" class="product-image" />
+        <h3>Pizza Pepperoni</h3>
+        <p class="product-description">Salsa de tomate, mozzarella y abundante pepperoni.</p>
+        <p class="product-price">Q 95.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_pizzas/Pizza Cuatro Quesos.jpg" alt="Pizza Cuatro Quesos" class="product-image" />
+        <h3>Pizza Cuatro Quesos</h3>
+        <p class="product-description">Mozzarella, gorgonzola, provolone y parmesano.</p>
+        <p class="product-price">Q 100.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_pizzas/Pizza de Prosciutto y Rúcula.jpg" alt="Pizza de Prosciutto y Rúcula" class="product-image" />
+        <h3>Pizza de Prosciutto y Rúcula</h3>
+        <p class="product-description">Mozzarella, prosciutto, rúcula fresca y parmesano.</p>
+        <p class="product-price">Q 110.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_pizzas/Pizza Diavola.jpg" alt="Pizza Diavola" class="product-image" />
+        <h3>Pizza Diavola</h3>
+        <p class="product-description">Salsa de tomate, mozzarella y salami picante.</p>
+        <p class="product-price">Q 98.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+
+      <div class="product-item">
+        <img src="../imagenes_pizzas/Pizza Funghi.jpg" alt="Pizza Funghi" class="product-image" />
+        <h3>Pizza Funghi</h3>
+        <p class="product-description">Salsa de tomate, mozzarella y champiñones frescos.</p>
+        <p class="product-price">Q 88.00</p>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="/Home/home.html" class="home-button">
+      <span class="material-icons">home</span>
+      </a>
+  </div>
+
+  <script type="module" src="pizzas.js"></script>
+</body>
+</html>
